@@ -1,1 +1,178 @@
-Initializing
+# Repolex Knowledge Graph of modelcontextprotocol/servers-archived
+
+RDF knowledge graph data for [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download modelcontextprotocol/servers-archived
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 9be4674d1ddf8c469e6461a27a337eeb65f76c2e
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 9be4674d1ddf8c469e6461a27a337eeb65f76c2e
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 00bf6eaa31b7ff4746ce2d333b8677bab48885f3.nq.gz
+│   ├── 0315a898f260bf6a7b7df5dd673aeef81ea666fa.nq.gz
+│   ├── 05c32c6053c1edd9a2faaf1b6ebf565c6650fa28.nq.gz
+│   ├── 05d76c0a63432e94c86651b971e00817e9659001.nq.gz
+│   ├── 06ac9d867558139556d98084da34333bcf9a51b4.nq.gz
+│   ├── 072fee119674b945b682c9dbc183197c7a7d5bc1.nq.gz
+│   ├── 0788ad8044c6dea9a261ae532168914b52dbbfa2.nq.gz
+│   ├── 087f641dce7a7f74010d204e8dc08831a951dad4.nq.gz
+│   ├── 0ec4d52c1f14cbc601eeca411f27b497eebb8063.nq.gz
+│   ├── 0ed3c0fa3009ed3226e9708e4db614362fbffff7.nq.gz
+│   ├── 1259e241909b15440be4b471d0fcab7e88abccba.nq.gz
+│   ├── 163e5afc90a432902d319648eb259fd2e6a77c8b.nq.gz
+│   ├── 1a3d6209588d5e03490ac7530827f2ec523ef44c.nq.gz
+│   ├── 1dc9f0087d8f479fcb721e137d6c2151cc7030d7.nq.gz
+│   ├── 1f7efa46f823f9d946ce7a60ea4984618a97a123.nq.gz
+│   ├── 1fa4dc893b82a5963006e688b990cf5156f7687f.nq.gz
+│   ├── 1ff9c7cc41bc8db0a23d0f2ac24219d2c146f5a6.nq.gz
+│   ├── 208ca01e412ce8718fbcfc9ab10f63abb1f6c588.nq.gz
+│   ├── 216d9b5b9acad700c0b2913439c6a75723c23477.nq.gz
+│   ├── 22045652d1cddc00219626071524a1b5c4e7e0ab.nq.gz
+│   ├── 2270018733f5bbdb75cf097b3e69d04044e6c19a.nq.gz
+│   ├── 24a2bb877a59dcc96837b2f0b3b016dbfeaca6e5.nq.gz
+│   ├── 24fabf3e584abd413a181d9732fb317220f28c89.nq.gz
+│   ├── 2687f6ed37b1d86668635a9e0e01a685a61df2f8.nq.gz
+│   ├── 2746d63419e00a4868fb681e5d801dc365bc99c2.nq.gz
+│   ├── 29f5296b6b90567647a04c872d3a1fea7b82f6cd.nq.gz
+│   ├── 2a1af133393d062ea71a6d0dcfa436e4a43f0936.nq.gz
+│   ├── 2d9ba745282ca304d107aa7cc82236a6d33c6b01.nq.gz
+│   ├── 2edc34b0e1a6ae43253856e3474e9f8fb5a2c417.nq.gz
+│   ├── 337b9db08c1847d3a4e43d2ce8075b1312280ca4.nq.gz
+│   ├── 3628e7072f2067db21f866813a2d834ec3ef697a.nq.gz
+│   ├── 3808d7fc3323ad9e8f5aac5c58ba392a5bf8f09f.nq.gz
+│   ├── 3d48435454b105021b4f777c11b6b07d8d2ffea3.nq.gz
+│   ├── 44913c817f6456b20db780f7cabba91795637328.nq.gz
+│   ├── 46213b6e5ff188bcf8b7a4f92855bffb5da03f15.nq.gz
+│   ├── 4cf0ab9bd26ea5066771cd825a759321c5ae3f41.nq.gz
+│   ├── 4d33cae1df3d762625343b5fd9a3e36089f4fcac.nq.gz
+│   ├── 4e0a657918e74b465352111e71cee2c2c3b77315.nq.gz
+│   ├── 54f0838f463b786e80920b4d15747d724ade12b5.nq.gz
+│   ├── 596ffeee6699eaa9760900bc18ca53ae82dc6278.nq.gz
+│   ├── 59ef9caca10eb68153cd7718fe5d0558bd21e000.nq.gz
+│   ├── 5b940f3b00bd286f580181557fb592a1bbb86943.nq.gz
+│   ├── 5e4c04c48fa1fed21b243a3ec83c7b8b8100214a.nq.gz
+│   ├── 5e837ba2ee84e67b54970a9aa5bdca05d2369ff6.nq.gz
+│   ├── 5fbe8a15b5879ab245d41c38073fe49f09339f87.nq.gz
+│   ├── 63007799b8881fd014b39c3c9ef83afe737d112c.nq.gz
+│   ├── 648f7c6b926819f4e78d06bd9a9aba1e2e8150a1.nq.gz
+│   ├── 653c654b5cb661e11c184bb2230acb6ca008a894.nq.gz
+│   ├── 6727854b8b9fbf0a0ff26074532adbdd10e3401c.nq.gz
+│   ├── 6a91035d52ea76918f74fc564161a0c15142082d.nq.gz
+│   ├── 6aaf81ac65c8e3bdf0f455a6b5b8f3f8adea94d6.nq.gz
+│   ├── 6bcfbb97df1002090362e0774e7241029756678e.nq.gz
+│   ├── 6ca491578c1812d584b85b60003543441149b133.nq.gz
+│   ├── 70fa0dbd0ef4a54b17bde5bfe2c558e924be08ac.nq.gz
+│   ├── 7555fa008145bc600efb903e85e3c17d5da3daed.nq.gz
+│   ├── 76faa72997c94fe384c31fe3f006cd778783b37f.nq.gz
+│   ├── 7749c243e4feb30d93f0038140432dcf046a96a2.nq.gz
+│   ├── 7ecb7109b8ccf67f3948abeb9ef33e376644aabd.nq.gz
+│   ├── 80cbb388b2acbf9b9eced180ca896474419beadf.nq.gz
+│   ├── 89eb21e042e2f8f4166186215e26e4340351c6e7.nq.gz
+│   ├── 8fc09807174ad9e2778271118e8748ae05869ace.nq.gz
+│   ├── 8ffb3d70628ed68f4fc3fc2a35767aafda9a15ac.nq.gz
+│   ├── 923ffa7e09937478832cb61f3bfa250883404cf8.nq.gz
+│   ├── 9517946e46b37a0b04ed62fb74feae27c3d52861.nq.gz
+│   ├── 98b13da09df713d5dd4d73cb92d33016ac342c7a.nq.gz
+│   ├── 9b7033b57e99f2f285e260bfeea94d88334e9ecd.nq.gz
+│   ├── 9d5b814e5a8b80addebc73e9943660e473f1e1a7.nq.gz
+│   ├── 9f7550b1ef09d330df1f95682cd0f36c0eacaff4.nq.gz
+│   ├── 9f885bbc3bff00eef2d221e844d0707f31ec5c63.nq.gz
+│   ├── a1edc0c9ce8701e61314cf9eea368e8628dd189c.nq.gz
+│   ├── a2d4be3773f4acfa339a28cec239504e3c76b2ff.nq.gz
+│   ├── a3ad36b8d94a9759ef2b4a71c878de39ce03ee3a.nq.gz
+│   ├── a67f5ac96fbf2f8e239e6bbd489a81893e79a3a8.nq.gz
+│   ├── a706a15e75ba2c17001e901aa08f6bc5e0f1c6d2.nq.gz
+│   ├── a87cdd8f3f50346d3d7b3bc1a52e063a553ab344.nq.gz
+│   ├── a9a8c1a6461d70f94e09dde5ffbb88557eb35c6f.nq.gz
+│   ├── af93380dd020d0075bdec42c3933786ad3da9766.nq.gz
+│   ├── b10e1b5f4aecfca5efc8f7c61d0e862736179475.nq.gz
+│   ├── b2d5a0c124205ad577470ce0208f28699ec21f5d.nq.gz
+│   ├── b327649fc597ed520f33a5648316f998c8de5905.nq.gz
+│   ├── beda6b0eab59994c118a91084d540f7663651fc7.nq.gz
+│   ├── bfdb22774d4c21a681804b312fd71414e423a93b.nq.gz
+│   ├── c22d9fcd4fe58cc11af9adf736018456c2b45a9e.nq.gz
+│   ├── c6a346cfef2a1ac0d2f1084080bb8124aa18b239.nq.gz
+│   ├── c8cfe3959183f8e9a50f83f54cd723f2dc9c252d.nq.gz
+│   ├── c9a93f1a5b06c758d5c153c1b6341d34e540c72f.nq.gz
+│   ├── cc92521a70e96d460edf6488dafe5b435768e860.nq.gz
+│   ├── cf9687215b2cb3f1984eb29cf0896bff9a215ab0.nq.gz
+│   ├── d1456be282573866d72ffb2dc19c471cc8bfdf02.nq.gz
+│   ├── d2907bf7055075036d44cf42ab66388f36fa8836.nq.gz
+│   ├── d853b8efc9aa76ecc770945900652afabd91f134.nq.gz
+│   ├── dd08afeb459da81f774eded11fc90a8eb54b5698.nq.gz
+│   ├── e0f6162333ff4914a6e709d41204efc4c49aefd4.nq.gz
+│   ├── e119288d447bc3a09872db1575b1edc2cd300769.nq.gz
+│   ├── e2fa50b150c6b7f349bdb879480e91f55d5c89fb.nq.gz
+│   ├── e4d02eb5311619aac5431871eefc39deb9f1913d.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e85691a0be0287c4544427ced71100c8c1c6780d.nq.gz
+│   ├── ec5da158255069962de75e8100bea5288d1c2198.nq.gz
+│   ├── f2135b36210d8401094dd69963395c197689ac22.nq.gz
+│   ├── f25b33d064bf8903f95bb2bb54064b0786bd98d6.nq.gz
+│   ├── f3a21fb7870192f6313bddd282033b5c31f7615e.nq.gz
+│   └── f60a544e31c34e02485d70ff01e9449b98b92d5f.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 9be4674d1ddf8c469e6461a27a337eeb65f76c2e.nq.gz
+└── tag
+    └── tag.nq.gz
+
+11 directories, 109 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived)
+
+---
+*Parsed on 2026-10-09 by [repolex](https://repolex.ai)*
